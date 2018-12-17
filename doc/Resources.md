@@ -29,3 +29,7 @@ You will need a Github account if you want to follow all steps when learning to 
 Creating a Unity account will also be nessesary if you want to include Unity Ads and other Unity services in your game.
 
 - Create a Unity account here : https://id.unity.com/account/new
+
+## Community and Questions
+
+If you have any questions you are free to ask them either on Discord on in the Q&A section on Udemy. You can join the discord community using this invite: https://discord.gg/hPHvftc
