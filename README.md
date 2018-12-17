@@ -38,3 +38,7 @@ More info coming.
 # Find the course here
 
 Link coming.
+
+# Anything missing?
+
+Please contact me through Udemy and let me know!
