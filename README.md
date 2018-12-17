@@ -31,7 +31,7 @@ Your career in software development starts now.
 
 # How to use the repository
 
-Find all documents here: [doc](/doc)
+Find all documentation here: [doc](/doc)
 
 More info coming.
 
