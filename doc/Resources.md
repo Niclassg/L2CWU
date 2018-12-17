@@ -19,3 +19,13 @@ The version I will be using in the course is **Unity version 2018.3.0**
 I use Sourcetree as a GUI client for Git. It's easy to use and is well supported. You will learn all you need to know about it in the course.
 
 - Download Sourcetree here: https://www.sourcetreeapp.com/
+
+## Accounts
+
+You will need a Github account if you want to follow all steps when learning to use Git along with Sourcetree.
+
+- Join GitHub here: https://github.com/join
+
+Creating a Unity account will also be nessesary if you want to include Unity Ads and other Unity services in your game.
+
+- Create a Unity account here : https://id.unity.com/account/new
