@@ -6,15 +6,9 @@ namespace YourFirstApp
     {
         static void Main()
         {
-            //http://condor.depaul.edu/sjost/nwdp/notes/cs1/CSDatatypes.htm
+            //https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/statements-expressions-operators/operators
 
-            int number = 50;
-            float anotherNumber = 5.5f;
-            double aThirdNumber = 5.5;
-            string aString = "this is a string";
-            char aChar = 'c';
-
-            Console.WriteLine(aString);
+            Console.WriteLine(2 + 3);
         }
     }
 }
