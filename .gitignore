@@ -1,3 +1,6 @@
+# Ignores for individual projects
+Projects/Console Apps/Your First App/YourFirstApp/YourFirstApp/bin/Debug/
+
 [Ll]ibrary/
 [Tt]emp/
 [Oo]bj/
