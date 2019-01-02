@@ -6,7 +6,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            int number = 53 ;
+            Random random = new Random();
+            int number = random.Next(1, 101);
+
             string numberString;
             int numberGuessed;
 
