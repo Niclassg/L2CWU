@@ -5,6 +5,10 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Range(0.1f, 10f)]
+    [Tooltip("The speed the player moves at")]
+    [SerializeField] private float speed = 1f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +20,6 @@ public class PlayerMovement : MonoBehaviour
     {
 
        var rigidbody = GetComponent<Rigidbody>();
-        rigidbody.AddForce(Vector3.right * Input.GetAxis("Horizontal"), ForceMode.Impulse);
+        rigidbody.AddForce(Vector3.right * Input.GetAxis("Horizontal") * speed, ForceMode.Impulse);
     }
 }
