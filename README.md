@@ -33,7 +33,6 @@ Your career in software development starts now.
 
 Find all documentation here: [doc](/doc)
 
-More info coming.
 
 # Find the course here
 
