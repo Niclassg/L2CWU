@@ -61,10 +61,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\FallingBlocks\FallingBlock.cs" />
-    <Compile Include="Assets\FallingBlocksController.cs" />
-    <Compile Include="Assets\FallingBlocksSpawner.cs" />
+    <Compile Include="Assets\FallingBlocks\FallingBlocksController.cs" />
+    <Compile Include="Assets\FallingBlocks\FallingBlocksSpawner.cs" />
     <Compile Include="Assets\Lives\LivesSpawner.cs" />
     <Compile Include="Assets\Lives\LivesUI.cs" />
+    <Compile Include="Assets\ParticleSystemAutoDestroyer.cs" />
     <Compile Include="Assets\Player\PlayerMovement.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>E:/Git/L2CWU/Projects/Unity Apps/TheFallingBlocksGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

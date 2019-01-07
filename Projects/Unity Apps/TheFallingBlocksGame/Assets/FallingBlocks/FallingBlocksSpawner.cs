@@ -22,11 +22,7 @@ public class FallingBlocksSpawner : MonoBehaviour
         Gizmos.DrawCube(rightCube, Vector3.one / 5);
     }
 
-    private void Start()
-    {
-        SpawnRandomBlock();
-    }
-
+ 
     public void SpawnRandomBlock()
     {
         var fallingBlock = Instantiate(fallingBlockPrefab);

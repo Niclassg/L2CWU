@@ -105,6 +105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee64bb9637bc1f1408ff4e270643f160, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CollectParticlesPrefab: {fileID: 6743093784096346026, guid: 2412ddc084532d448bca1cba2d94fe81,
+    type: 3}
+  MissParticlesPrefab: {fileID: 8085088298099347334, guid: 7d696233b473c8045b8c5d927ea4d41c,
+    type: 3}
 --- !u!54 &8562836125679894677
 Rigidbody:
   m_ObjectHideFlags: 0

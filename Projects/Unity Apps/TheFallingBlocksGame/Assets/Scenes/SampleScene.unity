@@ -843,3 +843,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c846f635fbb4064f98f8d1caf162653, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fallingBlocksSpawner: {fileID: 2019159962}
+  blocksSpawnedPerMinute: 30
