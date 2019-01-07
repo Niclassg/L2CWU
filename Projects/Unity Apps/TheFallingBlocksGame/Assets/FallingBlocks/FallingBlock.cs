@@ -16,8 +16,6 @@ public class FallingBlock : MonoBehaviour
     {
         if (collided) return;
 
-        collided = true;
-
         if(BlockCollided != null)
         {
             BlockCollided.Invoke(collision);
@@ -25,9 +23,11 @@ public class FallingBlock : MonoBehaviour
 
         if(collision.collider.tag == "Player")
         {
+            collided = true;
             Collect();
         } else if(collision.collider.tag == "Bottom")
         {
+            collided = true;
             Miss();
         }
     }

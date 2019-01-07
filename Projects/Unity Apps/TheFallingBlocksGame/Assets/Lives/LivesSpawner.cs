@@ -27,6 +27,12 @@ public class LivesSpawner : MonoBehaviour
 
     public void RemoveOneLive()
     {
+        if(LiveUIElements.Count == 0)
+        {
+            Debug.LogWarning("Tried to remove a live, but no lives present.");
+            return;
+        }
+
         var lastElement = livesUIElements.Last();
         lastElement.GetComponent<Rigidbody>().isKinematic = false;
         livesUIElements.Remove(lastElement);
