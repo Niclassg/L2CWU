@@ -11,15 +11,35 @@ public class FallingBlocksController : MonoBehaviour
 
     private Coroutine coroutine;
 
+    public event Action BlockHitBottom;
+    public event Action BlockHitPlayer;
 
     private IEnumerator BlocksSpawnRoutine()
     {
         while (true)
         {
-            fallingBlocksSpawner.SpawnRandomBlock();
+           var fallingBlock = fallingBlocksSpawner.SpawnRandomBlock();
+            fallingBlock.BlockCollided += FallingBlock_BlockCollided;
             yield return new WaitForSeconds(1f/(blocksSpawnedPerMinute/60f));
         }
         
+    }
+
+    private void FallingBlock_BlockCollided(Collision obj)
+    {
+        if(obj.collider.tag == "Player")
+        {
+            if(BlockHitPlayer != null)
+            {
+                BlockHitPlayer.Invoke();
+            }
+        } else if (obj.collider.tag == "Bottom")
+        {
+            if(BlockHitBottom != null)
+            {
+                BlockHitBottom.Invoke();
+            }
+        }
     }
 
     public void StartSpawningBlocks()

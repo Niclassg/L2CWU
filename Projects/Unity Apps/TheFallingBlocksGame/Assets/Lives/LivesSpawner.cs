@@ -10,6 +10,7 @@ public class LivesSpawner : MonoBehaviour
 
     private List<GameObject> livesUIElements = new List<GameObject>();
 
+    public List<GameObject> LiveUIElements { get { return livesUIElements; } }
 
     public void SpawnLives()
     {

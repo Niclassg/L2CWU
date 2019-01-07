@@ -9,7 +9,6 @@ public class FallingBlocksSpawner : MonoBehaviour
     [SerializeField] private float spawnLimitLeft;
     [SerializeField] private float spawnLimitRight;
 
-
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.gray;
@@ -23,10 +22,12 @@ public class FallingBlocksSpawner : MonoBehaviour
     }
 
  
-    public void SpawnRandomBlock()
+    public FallingBlock SpawnRandomBlock()
     {
         var fallingBlock = Instantiate(fallingBlockPrefab);
         fallingBlock.transform.position = GetRandomPosition();
+
+        return fallingBlock;
     }
 
     private Vector3 GetRandomPosition()

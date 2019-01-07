@@ -10,7 +10,24 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        fallingBlocksController.BlockHitPlayer += FallingBlocksController_BlockHitPlayer;
+        fallingBlocksController.BlockHitBottom += FallingBlocksController_BlockHitBottom;
+
         StartGame();
+    }
+
+    private void FallingBlocksController_BlockHitBottom()
+    {
+        livesSpawner.RemoveOneLive();
+        if(livesSpawner.LiveUIElements.Count == 0)
+        {
+            //Restart the game
+        }
+    }
+
+    private void FallingBlocksController_BlockHitPlayer()
+    {
+        //Maybe give player a point --
     }
 
     private void StartGame()
