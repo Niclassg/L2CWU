@@ -10,11 +10,6 @@ public class LivesSpawner : MonoBehaviour
 
     private List<GameObject> livesUIElements = new List<GameObject>();
 
-    private void Start()
-    {
-        SpawnLives();
-        RemoveOneLive();
-    }
 
     public void SpawnLives()
     {

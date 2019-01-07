@@ -63,6 +63,7 @@
     <Compile Include="Assets\FallingBlocks\FallingBlock.cs" />
     <Compile Include="Assets\FallingBlocks\FallingBlocksController.cs" />
     <Compile Include="Assets\FallingBlocks\FallingBlocksSpawner.cs" />
+    <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\Lives\LivesSpawner.cs" />
     <Compile Include="Assets\Lives\LivesUI.cs" />
     <Compile Include="Assets\ParticleSystemAutoDestroyer.cs" />

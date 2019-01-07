@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,10 +11,6 @@ public class FallingBlocksController : MonoBehaviour
 
     private Coroutine coroutine;
 
-    private void Start()
-    {
-      coroutine = StartCoroutine(BlocksSpawnRoutine());
-    }
 
     private IEnumerator BlocksSpawnRoutine()
     {
@@ -25,4 +22,8 @@ public class FallingBlocksController : MonoBehaviour
         
     }
 
+    public void StartSpawningBlocks()
+    {
+        coroutine = StartCoroutine(BlocksSpawnRoutine());
+    }
 }

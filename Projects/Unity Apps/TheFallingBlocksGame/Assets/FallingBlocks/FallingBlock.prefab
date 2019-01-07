@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 220584399582675045}
   - component: {fileID: 8915009473995941719}
   - component: {fileID: 8562836125679894677}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FallingBlock
   m_TagString: Untagged
   m_Icon: {fileID: 0}
