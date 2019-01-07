@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class LivesSpawner : MonoBehaviour
@@ -12,6 +13,7 @@ public class LivesSpawner : MonoBehaviour
     private void Start()
     {
         SpawnLives();
+        RemoveOneLive();
     }
 
     public void SpawnLives()
@@ -25,6 +27,16 @@ public class LivesSpawner : MonoBehaviour
             livesUIElement.transform.position = livesUILocations[i];
             livesUIElements.Add(livesUIElement);
         }
+    }
+
+    public void RemoveOneLive()
+    {
+        var lastElement = livesUIElements.Last();
+        lastElement.GetComponent<Rigidbody>().isKinematic = false;
+        livesUIElements.Remove(lastElement);
+
+        Destroy(lastElement, 2f);
+
     }
 
 }
