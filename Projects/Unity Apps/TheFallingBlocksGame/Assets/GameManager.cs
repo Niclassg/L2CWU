@@ -21,7 +21,8 @@ public class GameManager : MonoBehaviour
         livesSpawner.RemoveOneLive();
         if(livesSpawner.LiveUIElements.Count == 0)
         {
-            //Restart the game
+            fallingBlocksController.StopSpawningBlocks();
+            StartGame();
         }
     }
 
