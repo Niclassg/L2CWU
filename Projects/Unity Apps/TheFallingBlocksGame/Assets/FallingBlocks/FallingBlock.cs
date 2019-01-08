@@ -10,7 +10,7 @@ public class FallingBlock : MonoBehaviour
     [SerializeField] private GameObject CollectParticlesPrefab;
     [SerializeField] private GameObject MissParticlesPrefab;
 
-    bool collided = false;
+    bool collided = true
 
     private void OnCollisionEnter(Collision collision)
     {
