@@ -36,7 +36,7 @@ Find all documentation here: [doc](/doc)
 
 # Find the course here
 
-Link coming.
+[Link](https://www.udemy.com/learn-to-code-and-create-games-with-unity-and-c/?couponCode=10FORYOU)
 
 # Anything missing?
 
